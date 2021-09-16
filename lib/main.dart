@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kulla/resources/colors.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:kulla/resources.dart';
 import 'package:remixicon/remixicon.dart';
 
 void main() {
@@ -12,6 +13,9 @@ class KullaApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kulla',
       theme: ThemeData(
+        textTheme: GoogleFonts.ubuntuTextTheme(
+          Theme.of(context).textTheme,
+        ),
         primarySwatch: Colors.green,
       ),
       home: Row(
@@ -40,12 +44,63 @@ class Panel extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        SizedBox(
-          height: 100,
-          width: 100,
-          child: Icon(Remix.a24_hours_fill),
+        Column(
+          children: [
+            SizedBox(
+              height: 100,
+              width: 100,
+              child: Center(
+                child: Icon(
+                  Remix.account_circle_line,
+                  size: 41,
+                  color: Colors.white,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 100,
+              width: 100,
+              child: Icon(
+                Remix.send_plane_line,
+                size: 41,
+                color: Colors.white,
+              ),
+            ),
+            SizedBox(
+              height: 100,
+              width: 100,
+              child: Icon(
+                Remix.contacts_book_2_line,
+                size: 41,
+                color: Colors.white,
+              ),
+            )
+          ],
+        ),
+        Container(
+          margin: EdgeInsets.symmetric(vertical: 25),
+          child: Column(
+            children: [
+              Icon(
+                Remix.broadcast_fill,
+                color: Colors.white,
+                size: 41,
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                'Kulla',
+                style: TextStyle(
+                  fontSize: 10,
+                  color: Colors.white,
+                  // fontFamily:
+                ),
+              ),
+            ],
+          ),
         )
       ],
     );
