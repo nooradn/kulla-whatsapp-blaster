@@ -86,15 +86,15 @@ class _PanelBarState extends State<PanelBar> {
         selectedPanel = widget.index;
       }),
       child: Container(
-        height: 100,
-        width: 100,
+        height: 75,
+        width: 75,
         color: selectedPanel == widget.index
             ? Color(0x55000000)
             : Colors.transparent,
         child: Center(
           child: Icon(
             widget.icon,
-            size: 41,
+            size: 35,
             color: Colors.white,
           ),
         ),
