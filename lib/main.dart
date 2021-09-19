@@ -20,7 +20,7 @@ class KullaApp extends StatelessWidget {
         children: [
           Container(
             color: primary,
-            width: 100,
+            width: 75,
             child: Panel(),
           ),
           Container(color: bg)
@@ -67,7 +67,6 @@ class Panel extends StatelessWidget {
 
 // MENU PANEL BAR SISI KIRI
 int selectedPanel = 2;
-var colorPanel;
 
 class PanelBar extends StatefulWidget {
   const PanelBar({Key? key, required this.icon, required this.index})
