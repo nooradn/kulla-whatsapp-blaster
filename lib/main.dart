@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kulla/panelbar.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:kulla/resources.dart';
 import 'package:remixicon/remixicon.dart';
@@ -14,7 +15,7 @@ class KullaApp extends StatelessWidget {
         // textTheme: GoogleFonts.ubuntuTextTheme(
         //   Theme.of(context).textTheme,
         // ),
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.teal,
       ),
       home: Row(
         children: [
@@ -66,38 +67,3 @@ class Panel extends StatelessWidget {
 }
 
 // MENU PANEL BAR SISI KIRI
-int selectedPanel = 2;
-
-class PanelBar extends StatefulWidget {
-  const PanelBar({Key? key, required this.icon, required this.index})
-      : super(key: key);
-  final icon;
-  final int index;
-  @override
-  _PanelBarState createState() => _PanelBarState();
-}
-
-class _PanelBarState extends State<PanelBar> {
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => setState(() {
-        selectedPanel = widget.index;
-      }),
-      child: Container(
-        height: 75,
-        width: 75,
-        color: selectedPanel == widget.index
-            ? Color(0x55000000)
-            : Colors.transparent,
-        child: Center(
-          child: Icon(
-            widget.icon,
-            size: 35,
-            color: Colors.white,
-          ),
-        ),
-      ),
-    );
-  }
-}
