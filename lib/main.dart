@@ -40,16 +40,16 @@ class Panel extends StatelessWidget {
         Column(
           children: [
             PanelBar(
-              icon: Remix.account_circle_line,
               index: 1,
+              icon: Remix.account_circle_line,
             ),
             PanelBar(
-              icon: Remix.send_plane_line,
               index: 2,
+              icon: Remix.send_plane_line,
             ),
             PanelBar(
-              icon: Remix.contacts_book_2_line,
               index: 3,
+              icon: Remix.contacts_book_2_line,
             ),
           ],
         ),

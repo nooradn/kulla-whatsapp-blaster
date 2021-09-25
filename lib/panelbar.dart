@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 int selectedPanel = 1;
 dynamic panelColor;
 
+// LEFT GREEN PANELBAR
+
 class PanelBar extends StatefulWidget {
   const PanelBar({Key? key, required this.icon, required this.index})
       : super(key: key);
