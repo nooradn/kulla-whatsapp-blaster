@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:kulla/panelbar.dart';
-// import 'package:google_fonts/google_fonts.dart';
 import 'package:kulla/resources.dart';
 import 'package:remixicon/remixicon.dart';
 
@@ -12,9 +11,6 @@ class KullaApp extends StatelessWidget {
     return MaterialApp(
       title: 'Kulla',
       theme: ThemeData(
-        // textTheme: GoogleFonts.ubuntuTextTheme(
-        //   Theme.of(context).textTheme,
-        // ),
         primarySwatch: Colors.teal,
       ),
       home: Row(

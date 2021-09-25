@@ -28,9 +28,6 @@ class _PanelBarState extends State<PanelBar> {
           height: 75,
           width: 75,
           color: panelColor,
-          // color: selectedPanel == widget.index
-          //     ? Color(0x55000000)
-          //     : Colors.transparent,
           child: Center(
             child: Icon(
               widget.icon,
