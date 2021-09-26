@@ -15,6 +15,26 @@ content => pages
 - contacts manager
 
 
+# root app
+row
+    container
+        column - panel
+            column
+                container - account
+                    icon
+                container - blaster
+                    icon
+                container - contacts
+                    icon
+            column
+                column
+                    switch
+                    text
+                column
+                    icon
+                    text
+    content or pages
+
 
 # welcome-screen
 center
@@ -44,8 +64,61 @@ center
 
 # blaster
 center
-    row
-        container
+    row - dua side
+        column - sisi kiri
+            container - box pesan
+                column
+                    container - header box pesan
+                        row
+                            text
+                            row
+                                btn 1
+                                btn 2
+                                btn 3
+                                btn 4
+                                btn 5
+                container - field pesan
+                    text
+            row - bottom buttons
+                btn 1
+                btn 2
+                btn 3
+        container - sisi kanan, target
             column
+                container - header target
+                    row
+                        text
+                        text
+                container
+                    gallery
 
-        container
+# contact-list
+center
+    table
+        headers
+            row
+                row
+                    checkbox
+                    nama
+                    no hp
+                    category
+                row
+                    container - search
+                        row
+                            icon
+                            text
+                    container - data
+                        row
+                            icon
+                            text
+        contents
+            row
+                row
+                    checkbox
+                    nama
+                    no hp
+                    category
+                row
+                    icon star
+                    icon edit
+                    icon trash
