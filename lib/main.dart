@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kulla/pages/account.dart';
 import 'package:kulla/panelbar.dart';
 import 'package:kulla/resources.dart';
 import 'package:remixicon/remixicon.dart';
@@ -15,12 +16,20 @@ class KullaApp extends StatelessWidget {
       ),
       home: Row(
         children: [
+          /// PANEL SISI KIRI
           Container(
             color: primary,
             width: 75,
             child: Panel(),
           ),
-          Container(color: bg)
+
+          /// KONTEN SISI KANAN
+          Container(
+            height: double.infinity,
+            width: double.infinity,
+            padding: EdgeInsets.all(50),
+            child: AccountPage(),
+          ),
         ],
       ),
     );
@@ -62,4 +71,4 @@ class Panel extends StatelessWidget {
   }
 }
 
-// MENU PANEL BAR SISI KIRI
+// KONTEN SISI KANAN
