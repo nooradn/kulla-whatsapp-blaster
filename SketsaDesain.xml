@@ -1,0 +1,51 @@
+main => row
+- panel
+- content
+
+panel => column
+- account
+- blaster
+- contacts manager
+- logo (bawah pol)
+
+content => pages
+- welcome, scan qr
+- logged in, account options
+- blaster
+- contacts manager
+
+
+
+# welcome-screen
+center
+    container
+        row
+            column
+                text h1
+                text h2
+                btn
+            column
+                qr-code
+                texts
+
+# logged-in
+center
+    container
+        row
+            column
+                text h3
+                text h2
+                text h3
+                text h2
+                btn
+            column
+                qr-code
+                texts
+
+# blaster
+center
+    row
+        container
+            column
+
+        container

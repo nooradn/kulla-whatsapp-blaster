@@ -17,26 +17,17 @@ class PanelBar extends StatefulWidget {
 class _PanelBarState extends State<PanelBar> {
   @override
   Widget build(BuildContext context) {
-    return MouseRegion(
-      onHover: (event) => setState(() {
-        panelColor = Color(0x55000000);
-      }),
-      onExit: (event) => setState(() {
-        panelColor = Colors.transparent;
-      }),
-      cursor: SystemMouseCursors.click,
-      child: GestureDetector(
-        child: Container(
-          height: 75,
-          width: 75,
-          color: panelColor,
-          child: Center(
-            child: Icon(
-              widget.icon,
-              size: 35,
-              color: Colors.white,
-            ),
-          ),
+    return Container(
+      height: 75,
+      width: 75,
+      color: selectedPanel == 1
+          ? Colors.black.withOpacity(50)
+          : Colors.transparent,
+      child: Center(
+        child: Icon(
+          widget.icon,
+          size: 35,
+          color: Colors.white,
         ),
       ),
     );
