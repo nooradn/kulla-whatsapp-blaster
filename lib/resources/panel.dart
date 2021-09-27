@@ -11,30 +11,16 @@ class Panel extends StatelessWidget {
       height: double.infinity,
       color: Colors.teal,
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Column(
             children: [
-              PanelBox(),
-              PanelBox(),
-              PanelBox(),
+              PanelBox(iconImage: Remix.account_circle_line),
+              PanelBox(iconImage: Remix.send_plane_2_line),
+              PanelBox(iconImage: Remix.contacts_book_2_line),
             ],
           ),
-          Column(
-            children: [
-              Container(
-                child: Switch(
-                  value: true,
-                  onChanged: (value) {},
-                ),
-              ),
-              Column(
-                children: [
-                  Icon(Remix.broadcast_fill),
-                  Text('Kulla'),
-                ],
-              )
-            ],
-          )
+          PanelBox(iconImage: Remix.information_line),
         ],
       ),
     );
@@ -42,10 +28,20 @@ class Panel extends StatelessWidget {
 }
 
 class PanelBox extends StatelessWidget {
-  const PanelBox({Key? key}) : super(key: key);
+  const PanelBox({Key? key, required this.iconImage}) : super(key: key);
+  final iconImage;
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      width: 75,
+      height: 75,
+      child: Center(
+          child: Icon(
+        iconImage,
+        size: 35,
+        color: Colors.white,
+      )),
+    );
   }
 }

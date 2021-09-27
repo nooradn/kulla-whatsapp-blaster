@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'resources/Panel.dart';
 import 'resources/contents-router.dart';
+import 'package:kulla/pages/account.dart';
 
 void main() => runApp(Kulla());
 
@@ -18,7 +19,10 @@ class Kulla extends StatelessWidget {
       home: Row(
         children: [
           Panel(),
-          Contents(),
+          Container(
+            child: Account(),
+            color: Color(0xffFAFAFA),
+          ),
         ],
       ),
     );
