@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'resources/Panel.dart';
-// import 'resources/contents-router.dart';
-import 'package:kulla/pages/account.dart';
 
-void main() => runApp(Kulla());
+void main() {
+  runApp(Kulla());
+}
 
 class Kulla extends StatelessWidget {
   const Kulla({Key? key}) : super(key: key);
@@ -11,17 +12,19 @@ class Kulla extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Kulla - WhatsApp Blaster',
+      themeMode: ThemeMode.light,
       theme: ThemeData(
+        brightness: Brightness.light,
         primaryColor: Colors.teal,
-        primaryColorDark: Colors.black54,
       ),
       home: Row(
         children: [
           Panel(),
           Container(
             color: Color(0xffFAFAFA),
-            child: Account(),
+            // child: Contents(),
           ),
         ],
       ),

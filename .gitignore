@@ -30,6 +30,12 @@
 .pub-cache/
 .pub/
 # /build/
+/build/app
+/build/flutter_assets
+/build/kotlin
+/build/path_provider
+/build/b*
+/build/4*
 
 # Web related
 lib/generated_plugin_registrant.dart
