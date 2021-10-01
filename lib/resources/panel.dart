@@ -21,21 +21,21 @@ class Panel extends StatelessWidget {
             children: [
               PanelBox(
                 iconImage: Remix.account_circle_line,
-                routePage: Account,
+                routePage: Account(),
               ),
               PanelBox(
                 iconImage: Remix.send_plane_2_line,
-                routePage: Blaster,
+                routePage: Blaster(),
               ),
               PanelBox(
                 iconImage: Remix.contacts_book_2_line,
-                routePage: Contacts,
+                routePage: Contacts(),
               ),
             ],
           ),
           PanelBox(
             iconImage: Remix.information_line,
-            routePage: InfoApp,
+            routePage: InfoApp(),
           ),
         ],
       ),
@@ -55,7 +55,12 @@ class PanelBox extends StatelessWidget {
       color: Colors.teal,
       child: InkWell(
         onTap: () {
-          Navigator.push(context, routePage);
+          // Navigator.pop(context);
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => routePage,
+              ));
         },
         child: Container(
           width: 75,

@@ -26,8 +26,15 @@ class _Contents extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: Row(
-        children: [],
+      child: Container(
+        width: 200,
+        height: 200,
+        child: FittedBox(
+          fit: BoxFit.cover,
+          child: Text(
+            'Account Page',
+          ),
+        ),
       ),
     );
   }

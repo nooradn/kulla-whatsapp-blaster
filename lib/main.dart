@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:kulla/pages/beginscanqr.dart';
 import 'resources/Panel.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class Kulla extends StatelessWidget {
           Panel(),
           Container(
             color: Color(0xffFAFAFA),
-            // child: Contents(),
+            child: BeginScanQR(),
           ),
         ],
       ),
