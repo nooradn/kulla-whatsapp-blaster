@@ -30,7 +30,7 @@ class _Contents extends StatelessWidget {
         width: 200,
         height: 200,
         child: FittedBox(
-          fit: BoxFit.cover,
+          fit: BoxFit.fitWidth,
           child: Text(
             'Info App Page',
           ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:kulla/pages/account.dart';
+// ignore: unused_import
 import 'package:kulla/pages/beginscanqr.dart';
 import 'resources/Panel.dart';
 
