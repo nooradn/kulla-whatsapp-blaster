@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:kulla/pages/account.dart';
-// ignore: unused_import
-import 'package:kulla/pages/beginscanqr.dart';
-import 'resources/Panel.dart';
+import 'package:kulla/pagecontents.dart';
+import 'resources/panel.dart';
+
+var isConnected = false;
 
 void main() {
   runApp(Kulla());
@@ -25,10 +25,7 @@ class Kulla extends StatelessWidget {
       home: Row(
         children: [
           Panel(),
-          Container(
-            color: Color(0xffFAFAFA),
-            child: BeginScanQR(),
-          ),
+          ContentsPage(),
         ],
       ),
     );

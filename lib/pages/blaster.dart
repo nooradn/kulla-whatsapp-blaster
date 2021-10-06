@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Blaster extends StatelessWidget {
-  const Blaster({Key? key}) : super(key: key);
+class BlasterPage extends StatelessWidget {
+  const BlasterPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

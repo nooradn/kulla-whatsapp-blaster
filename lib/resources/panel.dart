@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kulla/pages/account.dart';
-import 'package:kulla/pages/blaster.dart';
-import 'package:kulla/pages/contacts.dart';
-import 'package:kulla/pages/infoapp.dart';
 import 'package:remixicon/remixicon.dart';
 
 class Panel extends StatelessWidget {
@@ -21,21 +17,21 @@ class Panel extends StatelessWidget {
             children: [
               PanelBox(
                 iconImage: Remix.account_circle_line,
-                routePage: Account(),
+                routePage: '/account',
               ),
               PanelBox(
                 iconImage: Remix.send_plane_2_line,
-                routePage: Blaster(),
+                routePage: '/blaster',
               ),
               PanelBox(
                 iconImage: Remix.contacts_book_2_line,
-                routePage: Contacts(),
+                routePage: '/contacts',
               ),
             ],
           ),
           PanelBox(
             iconImage: Remix.information_line,
-            routePage: InfoApp(),
+            routePage: '/infoapp',
           ),
         ],
       ),
@@ -55,12 +51,7 @@ class PanelBox extends StatelessWidget {
       color: Colors.teal,
       child: InkWell(
         onTap: () {
-          // Navigator.pop(context);
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => routePage,
-              ));
+          Navigator.pushNamed(context, routePage);
         },
         child: Container(
           width: 75,

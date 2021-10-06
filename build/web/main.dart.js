@@ -13045,13 +13045,13 @@ o=b.a
 s=q/p>o/m?new P.Z(o*p/m,p):new P.Z(q,m*q/o)
 r=b
 break
-case C.cs:q=c.a
+case C.tD:q=c.a
 p=c.b
 o=b.a
 r=q/p>o/m?new P.Z(o,o*p/q):new P.Z(m*q/p,m)
 s=c
 break
-case C.tD:m=b.a
+case C.cs:m=b.a
 q=c.a
 p=m*c.b/q
 r=new P.Z(m,p)
@@ -45698,8 +45698,8 @@ C.tA=new S.bs(0,1/0,48,48)
 C.aU=new S.bs(0,1/0,0,1/0)
 C.tB=new U.fa("BoxFit.fill")
 C.tC=new U.fa("BoxFit.contain")
-C.cs=new U.fa("BoxFit.cover")
-C.tD=new U.fa("BoxFit.fitWidth")
+C.tD=new U.fa("BoxFit.cover")
+C.cs=new U.fa("BoxFit.fitWidth")
 C.tE=new U.fa("BoxFit.fitHeight")
 C.tF=new U.fa("BoxFit.none")
 C.ct=new U.fa("BoxFit.scaleDown")
