@@ -1,6 +1,6 @@
 # Kulla
-Kulla WhatsApp Blaster  
-Bismillah
+Kulla is a WhatsApp Blaster built from Flutter framework.
+It's still under development and may not cover the main function yet.
 
 # Features-ToDo
 - Advanced WhatsApp message sender
